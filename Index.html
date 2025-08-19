@@ -1,22 +1,62 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 <head>
     <meta charset="UTF-8" />
     <title>Banquet Selector</title>
 </head>
 <body>
     <div id="MainContainer">
-        <h1>Banquet Selector</h1>
-        <hr>
-        <div id="TopBar">
-            <button class="selector unselected">Small Banquet ($59)</button>
-            <button class="selector unselected">Big Banquet ($72)</button>
+        <!-- <div id="TopBar">
+            <button class="selector">Small Banquet ($59)</button>
+            <button class="selector">Big Banquet ($72)</button>
+
             <label for="peopleCount">Number of People: </label>
             <input type="number" id="peopleCount">
-        </div>
-        <div id="FoodSelection">
-            
+
+            <button id="toggleFilter" class="selector">Filters</button>
+        </div> -->
+        <nav id="TopBar">
+            <button class="selector">Small Banquet ($59)</button>
+            <button class="selector">Big Banquet ($72)</button>
+
+            <label for="peopleCount">Number of People: </label>
+            <input type="number" id="peopleCount">
+
+            <label for="TableShape">Table Shape: </label>
+            <select name="TableShape" id="TableShape" class="selector">
+                <option value="Round">Round</option>
+                <option value="Long">Long</option>
+            </select>
+
+            <button class="selector">Add Dietary Requirement</button>
+        </nav>
+        <div id="SelectionDiv">
+            <div id="FoodOptionDiv">
+                <button class="FoodOption">Option</button>
+                <button class="FoodOption">Option</button>
+                <button class="FoodOption">Option</button>
+                <button class="FoodOption">Option</button>
+                <button class="FoodOption">Option</button>
+                <button class="FoodOption">Option</button>
+                <button class="FoodOption">Option</button>
+                <button class="FoodOption">Option</button>
+                <button class="FoodOption">Option</button>
+                <button class="FoodOption">Option</button>
+                <button class="FoodOption">Option</button>
+                <button class="FoodOption">Option</button>
+                <button class="FoodOption">Option</button>
+                <button class="FoodOption">Option</button>
+                <button class="FoodOption">Option</button>
+            </div>
+            <div id="SelectedItemDiv">
+                <div class="SelectedItem">Apple</div>
+                <div class="SelectedItem">Apple</div>
+                <div class="SelectedItem">Apple</div>
+                <div class="SelectedItem">Apple</div>
+                <div class="SelectedItem">Apple</div>
+            </div>
         </div>
     </div>
 </body>
